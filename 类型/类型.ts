@@ -1,4 +1,3 @@
-import { message } from 'antd';
 let str: string = "jimmy";
 let num: number = 24;
 let bool: boolean = false;
@@ -15,13 +14,13 @@ let sym: symbol = Symbol("me");
 
 // null和undefined赋值给string
 let str1: string = "666";
-str1 = null
-str1 = undefined
+// str1 = null
+// str1 = undefined
 
 // null和undefined赋值给number
 let num1: number = 666;
-num1 = null
-num1 = undefined
+// num1 = null
+// num1 = undefined
 
 
 // let big: bigint =  100n;
@@ -35,6 +34,7 @@ num1 = undefined
 
 let arr: string[] = ['1', '2']
 let arr2: Array<string> = ['3', '4']
+
 //联合类型
 let arr3: (number | string)[]
 arr3 = [1, '2', '3', 4]
@@ -105,7 +105,7 @@ function push(array: any[], ...items: any[]) {
     items.forEach((item) => array.push(item))
 }
 
-let a = [];
+let a:any[] = [];
 push(a, 1, 4, 3, 2, '111')
 console.log(a)
 
